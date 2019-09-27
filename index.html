@@ -30,7 +30,7 @@
 <body class="light-blue lighten-5" style="text-align: center">
     <!--Change header as needed-->
     <header>
-        <h1 class="animated fadeInDown">App Challenge</h1>
+        <h1 class="animated fadeInDown">Shortest String</h1>
         <!--Add/change navigation as needed-->
         <nav>
 
@@ -43,34 +43,24 @@
             <!--Rows have columns - Row 1 Column 1-->
             <div class="col-md-12" style="padding: 6em">
                 <fieldset class="mt-4">
-                    <label for="guest">Enter your name (2 to 40 characters):</label>
-                    <input id="guest" type="text" minlength="2" maxlength="40" value="Lilly">
+                    <label for="firstString">Enter first string (2 to 40 characters):</label>
+                    <input id="firstString" type="text" minlength="2" maxlength="40" value="Hello">
                 </fieldset>
 
                 <fieldset class="mt-4">
-                    <label for="firstNumber">Enter first number (1 to 100):</label>
-                    <input id="firstNumber" type="number" min="1" max="100" value=7>
-                    <span id="firstWarning" class="text-danger"></span>
+                    <label for="secondString">Enter second string (2 to 40 characters):</label>
+                    <input id="secondString" type="text" minlength="2" maxlength="40" value="I like cheese">
                 </fieldset>
 
 
                 <fieldset class="mt-4">
-                    <label for="secondNumber">Enter second number (1 to 100):</label>
-                    <input id="secondNumber" type="number" min="1" max="100" value="12">
-                    <span id="secondWarning" class="text-danger"></span>
+                    <label for="thirdString">Enter third string (2 to 40 characters):</label>
+                    <input id="thirdString" type="text" minlength="2" maxlength="40" value="I have feelings">
                 </fieldset>
                 <button type="button" class="btn btn-primary" id="calcButton">Calculate</button>
                 <p id="result"></p>
             </div>
             <!--End column 1-->
-
-            <!--Row 1 Column 2-->
-            <div class="col-md-6">
-                <fieldset>
-
-                </fieldset>
-            </div>
-            <!--End of Column 2-->
         </div>
         <!--End of row 1-->
     </main>
@@ -131,7 +121,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>
