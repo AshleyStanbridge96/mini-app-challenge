@@ -7,13 +7,15 @@ const calcMinString = (firstString, secondString, thirdString) => {
 
 document.querySelector("#calcButton").addEventListener("click", () => {
     //Converted strings to int
-    const firstString = parseInt(document.querySelector("#firstString").value);
-    const secondString = parseInt(document.querySelector("#secondString").value);
-    const thirdString = parseInt(document.querySelector("#thirdString").value);
+    const firstString = document.querySelector("#firstString").value;
+    const secondString = document.querySelector("#secondString").value;
+    const thirdString = document.querySelector("#thirdString").value;
 
     //Begin of calculations
-    const minString = calcMinString(firstString, secondString, thirdString);
+    const minString = `The smallest string is of length ${calcMinString(firstString, secondString, thirdString)}`;
+    
 
+    
     //Send results back to IDs
     document.querySelector("#result").innerHTML = minString;
 
